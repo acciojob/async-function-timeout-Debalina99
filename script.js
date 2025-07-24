@@ -11,7 +11,7 @@ button.addEventListener("click", async () => {
     return;
   }
 
-  delay = parseInt(delay) * 1000;
+  delay = parseInt(delay);
 	await new Promise(resolve => setTimeout(resolve, delay));
     output.textContent = text;
 
